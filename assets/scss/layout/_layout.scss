@@ -1,0 +1,48 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+   max-width: 1120px;
+   margin-inline: 1.5rem;
+}
+
+.main{
+   position: relative;
+   height: 100vh;
+
+   &__bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: -1;
+   }
+}
+
+.search,
+.login{
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: var(--z-modal);
+   background-color: hsla(230, 75%, 15%, .1);
+   backdrop-filter: blur(24px);
+   -webkit-backdrop-filter: blur(24px); // For safari
+   padding: 8rem 1.5rem 0;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity .4s;
+}
+
+.search__close,
+.login__close{
+   position: absolute;
+   top: 2rem;
+   right: 2rem;
+   font-size: 1.5rem;
+   color: var(--title-color);
+   cursor: pointer;
+}

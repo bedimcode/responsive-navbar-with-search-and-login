@@ -1,0 +1,38 @@
+/*=============== SEARCH ===============*/
+.search{
+   &__form{
+      display: flex;
+      align-items: center;
+      column-gap: .5rem;
+      background-color: var(--container-color);
+      box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
+      padding-inline: 1rem;
+      border-radius: .5rem;
+      transform: translateY(-1rem);
+      transition: transform .4s;
+   }
+   &__icon{
+      font-size: 1.25rem;
+      color: var(--title-color);
+   }
+   &__input{
+      width: 100%;
+      padding-block: 1rem;
+      background-color: var(--container-color);
+      color: var(--text-color);
+
+      &::placeholder{
+         color: var(--text-color);
+      }
+   }
+}
+
+/* Show search */
+.show-search{
+   opacity: 1;
+   pointer-events: initial;
+
+   & .search__form{
+      transform: translateY(0);
+   }
+}

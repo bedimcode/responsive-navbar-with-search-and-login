@@ -1,0 +1,80 @@
+/*=============== LOGIN ===============*/
+.login{
+   &__form,
+   &__group{
+      display: grid;
+   }
+   &__form{
+      background-color: var(--container-color);
+      padding: 2rem 1.5rem 2.5rem;
+      box-shadow: 0 8px 32px hsla(230, 75%, 15%, .2);
+      border-radius: 1rem;
+      row-gap: 1.25rem;
+      text-align: center;
+      transform: translateY(-1rem);
+      transition: transform .4s;
+   }
+   &__title{
+      font-size: var(--h2-font-size);
+      color: var(--title-color);
+   }
+   &__group{
+      row-gap: 1rem;
+   }
+   &__label{
+      display: block;
+      text-align: initial;
+      color: var(--title-color);
+      font-weight: var(--font-medium);
+      margin-bottom: .25rem;
+   }
+   &__input{
+      width: 100%;
+      background-color: var(--container-color);
+      border: 2px solid var(--border-color);
+      padding: 1rem;
+      border-radius: .5rem;
+      color: var(--text-color);
+
+      &::placeholder{
+         color: var(--text-color);
+      }
+   }
+   &__signup{
+      margin-bottom: .5rem;
+
+      & a{
+         color: var(--first-color);
+      }
+   }
+   &__forgot{
+      display: inline-block;
+      color: var(--first-color);
+      margin-bottom: 1.25rem;
+   }
+   &__button{
+      display: inline-block;
+      background-color: var(--first-color);
+      width: 100%;
+      color: #fff;
+      font-weight: var(--font-semi-bold);
+      padding: 1rem;
+      border-radius: .5rem;
+      cursor: pointer;
+      transition: box-shadow .4s;
+      
+      &:hover{
+         box-shadow: 0 4px 24px hsla(230, 75%, 40%, .4);
+      }
+   }
+}
+
+/* Show login */
+.show-login{
+   opacity: 1;
+   pointer-events: initial;
+
+   & .login__form{
+      transform: translateY(0);
+   }
+}

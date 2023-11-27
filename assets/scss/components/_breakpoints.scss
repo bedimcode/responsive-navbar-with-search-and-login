@@ -1,0 +1,58 @@
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px){
+   .search,
+   .login{
+      padding-top: 10rem;
+   }
+
+   .search__form{
+      max-width: 450px;
+      margin-inline: auto;
+   }
+
+   .search__close,
+   .login__close{
+      width: max-content;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      margin-inline: auto;
+      font-size: 2rem;
+   }
+
+   .login__form{
+      max-width: 400px;
+      margin-inline: auto;
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px){
+   .nav{
+      height: calc(var(--header-height) + 2rem);
+      column-gap: 3rem;
+
+      &__close,
+      &__toggle{
+         display: none;
+      }
+      &__menu{
+         margin-left: auto;
+      }
+      &__list{
+         flex-direction: row;
+         column-gap: 3rem;
+      }
+   }
+
+   .login__form{
+      padding: 3rem 2rem 3.5rem;
+   }
+}
+
+@media screen and (min-width: 1150px){
+   .container{
+      margin-inline: auto;
+   }
+}
