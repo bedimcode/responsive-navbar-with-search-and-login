@@ -1,0 +1,33 @@
+========== HEADER ==========
+.nav__logo
+Logo
+
+.nav__link
+Home - About Us - Services - Featured - Contact Me
+
+
+========== SEARCH ==========
+.search__input - placeholder
+What are you looking for?
+
+
+========== LOGIN ==========
+.login__title
+Log In
+
+.login__label
+Email
+Password
+
+.login__input - placeholder
+Write your email
+Enter your password
+
+.login__signup
+You do not have an account? - Sign up
+
+.login__forgot
+You forgot your password
+
+.login__button
+Log In
